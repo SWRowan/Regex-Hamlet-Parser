@@ -62,17 +62,13 @@ public class HamletParser {
     }
 
     public boolean findHoratio(String data) {
-        if (horatioPattern.matcher(data).find()) {
-            return true;
-        }
-        return false;
+        return horatioPattern.matcher(data).find();
+
+
     }
 
     public boolean findHamlet(String data) {
-        if (hamletPattern.matcher(data).find()) {
-            return true;
-        }
-        return false;
+        return hamletPattern.matcher(data).find();
 
     }
 
