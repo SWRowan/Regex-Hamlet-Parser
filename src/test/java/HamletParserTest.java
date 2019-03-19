@@ -55,8 +55,11 @@ public class HamletParserTest {
 
     @Test
     public void hamletParsertest(){
+
         String hamToLeon = hamletParser.hamletToLeon(hamletText);
         String horToTariq = hamletParser.horatioToTariq(hamToLeon);
-        System.out.println(horToTariq);
+        String bigHam = hamletParser.bigHamChanger(horToTariq);
+        String bigTor = hamletParser.bigHorChanger(bigHam);
+        System.out.println(bigTor);
     }
 }
